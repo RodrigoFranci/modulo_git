@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Formulários</h1>
+    
+    <form> <!-- formulário  -->
+        <!-- placeholder: serve para lembrar o usuário o que deve colocar no campo -->
+        <input type="text"  placeholder="seu nome"/> <!-- receber dados do usuário  -->
+        <br>
+        <label for="email">Seu e-mail</label><!-- serve como etiqueta no campo -->
+        <input id="email" type="email"/>
+        <br>
+        <input type="tel" placeholder="seu telefone"/>
+        <br>
+        <input type="number" max="10" min="2" step="2"/>
+        <!-- max: número maximo que pode chegar -->
+        <!-- min: número minimo que pode chegar  -->
+        <!-- step: escolher um numero que possa pular até chegar a quantidade -->
+        <br>
+        <input type="file" /> <!-- anexar arquivos --> <br>
+        <input type="color"> <!-- escolher cor --> <br>
+        <input type="checkbox" id="checkbox-termos"> <!-- serve para selecionar uma caixa --> <label for="checkbox-termos" >Aceito os termos</label>
+        <p>
+            Qual sua cor favorita?
+        </p>
+        <input type="radio" name="cor-favorita" id="cor-vermelha"><label for="cor-vermelha">Vermelhor</label>
+        <input type="radio" name="cor-favorita" id="cor-verde"><label for="cor-verde">Verde</label>
+        <input type="radio" name="cor-favorita" id="cor-azul"><label for="cor-azul">Azul</label><br>
+        <label>Qual o seu filme favorito?</label>
+        <select multiple>
+            <option>Filme A</option>
+            <option>Filme B</option>
+            <option>Filme C</option>
+        </select>
+        <br>
+        <textarea></textarea>  <!-- abre uma caixa para colocar informações-->
+        <button type="submit"> <!-- Cria um botão -->
+            Enviar
+        </button>
+        <button type="reset"> 
+            Limpar
+        </button>
+
+        
+
+    </form>
+</body>
+</html>
